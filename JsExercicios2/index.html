@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+ 
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="titulo"></h1>
+        <p id="informacoes"></p>
+    </div>
+
+
+    <script>
+
+        var titulo = "Quem sou eu?";
+        document.querySelector("#titulo").innerText = titulo;
+
+        let idade = 20;
+        var nome = "João Paulo";
+        const altura = 1.75;
+
+
+        console.log(`Nome: ${nome}, Idade: ${idade}, Altura: ${altura}`);
+
+        idade = 21;
+        nome = "Pedro";
+    
+
+        console.log(`Nome: ${nome}, Idade: ${idade}, Altura: ${altura}`);
+
+               
+        document.querySelector("#informacoes").innerText = `Nome: ${nome}, Idade: ${idade}, Altura: ${altura}`;
+
+        
+        /*index.html:31 Uncaught TypeError: Assignment to constant variable.
+        at index.html:31:16*
+        
+        let e var foram possiveis de serem alteradas, no entanto, a const não pode ser alterada por ser justamente uma constante.*/
+
+      
+    </script>
+
+
+</body>
+</html>

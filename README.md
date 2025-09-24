@@ -1,4 +1,5 @@
 **Lista de Exercícios Práticos**
+
 Exercício 1 — Alterando texto com DOM
 Crie uma página com um parágrafo que tenha um texto qualquer e um botão. Ao clicar no botão, o texto do parágrafo deve mudar para algo diferente usando JavaScript e DOM.
 

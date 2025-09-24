@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ex 1</title>
+</head>
+<body>
+
+    <div class="container">
+    <p id="paragrafo">Antes ele era assim.</p>
+    <button id="botao">Clique aqui!</button>
+    </div>
+
+<script>
+
+const botao = document.getElementById('botao');
+const paragrafo = document.getElementById('paragrafo');
+const conteudoOriginal = botao.innerHTML;
+const conteudoBotaoOriginal = botao.innerHTML;
+
+  botao.addEventListener('click', function() {
+
+  paragrafo.textContent = 'Agora ele está assim!';
+      botao.textContent = '...';});
+
+
+
+</script>
+</body>
+</html>

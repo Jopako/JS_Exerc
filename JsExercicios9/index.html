@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex 9</title>
+</head>
+<body>
+    
+<form id="container">
+
+<h1>Formulário</h1>
+
+<div id="campos">
+<div id="nomeForm">
+
+    <label for="">Nome:</label>
+    <input id="nome" type="text" placeholder="Seu nome" required>
+
+</div>
+
+<div id="emailForm">
+
+<label for="emailForm">Email:</label>
+<input id="email" type="email" placeholder="Seu E-mail" required>
+
+</div>
+
+<div id="telefoneForm">
+
+<label for="telefoneForm">Telefone:</label>
+<input id="telefone" type="tel" placeholder="Seu telefone" required>
+
+</div>
+
+<div id="idadeForm">
+
+    <label for="idadeForm">Idade:</label>
+    <input id="idade" type="number" placeholder="Sua idade" required>
+
+</div>
+
+</div>
+
+    <button id="botao" type="submit">Enviar</button>
+
+</form>
+
+<script>
+
+const button = document.getElementById('botao')
+const form = document.getElementById('container')
+
+form.addEventListener("submit" , (event) => 
+{
+    event.preventDefault() 
+    console.log("Form enviado!")
+
+    const nome = document.getElementById("nome").value
+    const email = document.getElementById("email").value
+    const telefone = document.getElementById("telefone").value
+    const idade = document.getElementById("idade").value
+
+    console.log("Nome:", nome)
+    console.log("Email:", email)
+    console.log("Telefone:", telefone)
+    console.log("Idade:", idade)
+
+    form.reset() 
+
+});
+
+
+
+
+</script>
+
+</body>
+</html>

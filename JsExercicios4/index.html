@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex 4</title>
+
+</head>
+
+<body>
+
+    <form id="container">
+
+        <div id="nomeQuestionario">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" placeholder="Ex: Jonas">
+        </div>
+
+        <div id="idadeQuestionario">
+            <label for="idade">Idade: </label>
+            <input type="number" id="idade" placeholder="Ex: 25">
+        </div>
+
+        <div id="submit">
+             
+                
+            <button type="submit">Enviar</button>
+
+
+        </div>
+
+        <p id="aviso"></p>
+        
+    </form>
+
+    
+
+    <script>
+
+        const formulario = document.getElementById('container')
+
+        formulario.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+        const idade = document.getElementById('idade')
+        const nome = document.getElementById('nome')
+        const botao = document.querySelector('button')
+        const aviso = document.getElementById('aviso')
+        const idadeValor = idade.value
+        const nomeValor = nome.value
+    
+
+        if(idadeValor < 18)
+    {
+        aviso.textContent = "Eita " +nome.value+ "! Você é menor de 18."
+    }
+    else
+    {
+        aviso.textContent = "Maior de 18 anos."
+    }
+
+  });
+
+    </script>
+
+</body>
+
+</html>

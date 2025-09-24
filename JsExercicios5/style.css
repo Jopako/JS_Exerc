@@ -1,0 +1,26 @@
+body
+{
+   
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+
+}
+#container
+{
+    width: 200px;   
+    padding: 3em;
+    border-radius: 10px;
+   
+}
+button
+{
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px 2px 8px 2px rgb(0,0,0,4);
+    border-radius: 10px;
+ 
+}

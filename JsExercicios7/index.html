@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex 7</title>
+</head>
+<body>
+
+    <div id="container">
+        <button id="button" type="button">Clique</button>
+    </div>
+
+    <script>
+
+        const botao = document.getElementById('button')
+        const div = document.getElementById('container')
+        const body = document.body
+
+        botao.addEventListener('click',  ()=>
+        { 
+            div.classList.toggle("frufru");
+            botao.classList.toggle("botao");
+            body.classList.toggle("bgCor")
+            botao.textContent="🪐 Clique 🌌"
+        });
+
+
+    </script>
+
+</body>
+</html>

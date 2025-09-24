@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ex 8</title>
+</head>
+<body>
+    
+<div id="container">
+    <div id="titulo">
+        <h1>MEGA-SENA DO IFC!</h1>
+    </div>
+    <div id="numeros">
+        <div class="numero"></div>
+        <div class="numero"></div>
+        <div class="numero"></div>
+        <div class="numero"></div>
+        <div class="numero"></div>
+        <div class="numero"></div>
+    </div>
+    <div id="botao">
+        <button id="button" type="button">Sortear!</button>
+    </div>
+</div>
+
+<script>
+const botao = document.getElementById('button')
+const blocos = document.querySelectorAll('.numero')
+
+botao.addEventListener('click', () => 
+{
+    const numeros = []
+    while (numeros.length < 6) 
+    
+    {
+        let n = Math.floor(Math.random() * 61) 
+        if (!numeros.includes(n)) 
+        { 
+            numeros.push(n)
+        }
+    }
+
+    blocos.forEach((bloco, i) => 
+    {
+        bloco.textContent = numeros[i]
+    })
+})
+</script>
+
+</body>
+</html>

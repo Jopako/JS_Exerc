@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex 3</title>
+</head>
+<body>
+    <div id="main">
+    <div id="container">
+            <div id ="titulo">
+            <label for="name">Nome: </label>
+            </div>
+            <div id="submissao">
+            <input type="text" id="name" name="name" placeholder="Ex: Jonas Silveira">   
+            <button>Enviar</button>
+            </div>
+    </div>
+
+    <div id="output">
+        <h1>Lista de Nomes</h1>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+        let Nome
+        let button = document.querySelector("button")
+        let input = document.querySelector("input")
+        let ul = document.querySelector("ul")
+
+        button.addEventListener("click", function() {
+            Nome = input.value
+            let li = document.createElement("li")
+            li.textContent = Nome
+            ul.appendChild(li)
+            input.value = ""
+        })
+
+        console.log(ul)
+
+    </script>
+
+</body>
+</html>
+</body>
+</html>

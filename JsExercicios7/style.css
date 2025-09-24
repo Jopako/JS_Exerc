@@ -1,0 +1,44 @@
+body
+{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: white;
+
+}
+#container
+{
+    display: flex;
+}
+
+.frufru
+{
+    background-color: rgb(0, 0, 0);
+    padding: 3em;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    border: 2px solid rgb(251, 255, 0);
+   box-shadow: 5px 5px 10px rgba(241, 239, 239, 0.5);
+       justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.botao
+{
+    font-size: 2em;
+    border-radius: 10px;
+     border: 2px solid rgb(251, 255, 0);
+   box-shadow: 5px 5px 10px rgba(248, 247, 247, 0.5);
+   cursor: pointer;
+   color: white;
+   background-color: black;
+}
+.bgCor
+{
+    background-color: black;
+}

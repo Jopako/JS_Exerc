@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex 5</title>
+</head>
+<body>
+
+<div id="container">
+    <button id="botao" type="button">Me clique!</button>
+</div>
+
+<script>
+
+const button = document.getElementById('botao')
+const body =document.body
+
+   
+
+
+button.addEventListener('click' , () =>  
+{
+     
+    event.preventDefault(); 
+
+    const r = (Math.random() * 256);
+    const g = (Math.random() * 256);
+    const b = (Math.random() * 256);
+
+    body.style.backgroundColor =  "rgb(" + r + "," + g + "," + b + ")";;
+ 
+});
+
+</script>
+
+</body>
+</html>
